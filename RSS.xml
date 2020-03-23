@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="https://youngchief-btw.github.io/RSS">
+  <channel>
+    <title>youngchief btw ツ's RSS Feed</title>
+    <link>https://youngchief-btw.github.io/</link>
+    <description>The epic gamer's RSS feed</description>
+    <language>en-US</language>
+    <image>
+      <url>https://srv-file7.gofile.io/download/3nKW43/%20YoungChief%20-%20460x460.png</url>
+      <title>youngchief btw ツ's RSS Feed</title>
+      <link>https://youngchief-btw.github.io/</link>
+      <width>115</width>
+      <height>115</height>
+    </image>
+    <author>youngchief btw ツ</author>
+    <!--     <copyright></copyright> -->
+    <atom:link href="https://srv-file7.gofile.io/download/3nKW43/%20YoungChief%20-%20460x460.png"/>
+    <!--
+        <lastBuildDate>Mon, 06 Sep 2010 00:01:00 +0000</lastBuildDate>
+        <ttl>0000</ttl>
+        <category>Web development</category>
+    -->
+    <item>
+      <title>0 ~ Test Title</title>
+      <description>Hey</description>
+      <link>https://youngchief-btw.github.io/Blog?Post=0</link>
+      <!-- <guid isPermaLink="false/true">f26db96f-bb71-49f7-ac29-d34621eae4e0</guid> -->
+      <pubDate>Fri, 13 Mar 2020 10:25:00 PDT</pubDate>
+      <!--       <enclosure url="https://www.w3schools.com/xml/rss.mp3" length="5000" type="audio/mpeg" /> -->
+    </item>
+  </channel>
+</rss>

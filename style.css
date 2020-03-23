@@ -1,0 +1,37 @@
+/*
+    style.css
+*/
+
+body {
+  font-family: sans-serif;
+  background-color: aqua;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #55FF33;
+  border: 3px solid #111111;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+nav ul li {
+  display: inline;
+  border-right: 2px solid #111111;
+  padding-left: 8px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+aside {
+  float: right;
+  display: block;
+}

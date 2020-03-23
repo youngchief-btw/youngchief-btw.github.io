@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Short/Smart Links ~ youngchief btw ツ</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js"></script>
+
+    <meta name="description" content="youngchief btw ツ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="keywords"
+      content="youngchief, youngchief btw, youngchief btw ツ, youngchief-btw, youngchief-btw.github.io, youngchief-btw-github-io, youngchief-btw-github-io.glitch.me, ツ"
+    />
+
+    <link rel="preconnect" href="//gofile.io" />
+    <link rel="preconnect" href="//srv-file1.gofile.io" />
+    <link rel="preconnect" href="//srv-file2.gofile.io" />
+    <link rel="preconnect" href="//srv-file3.gofile.io" />
+    <link rel="preconnect" href="//srv-file4.gofile.io" />
+    <link rel="preconnect" href="//srv-file5.gofile.io" />
+    <link rel="preconnect" href="//srv-file6.gofile.io" />
+    <link rel="preconnect" href="//srv-file7.gofile.io" />
+    <link rel="preconnect" href="//srv-file8.gofile.io" />
+    <link rel="preconnect" href="//srv-file9.gofile.io" />
+    <link rel="preconnect" href="//srv-file10.gofile.io" />
+
+    <meta
+      name="google-site-verification"
+      content="HtT3bg-LmznPZtght292wiZeQ-gxlMplvXb85eV8IkI"
+    />
+    <meta
+      name="keywords"
+      content="youngchief, youngchief btw, youngchief btw ツ, youngchief-btw, youngchief-btw.github.io, youngchief-btw-github-io, youngchief-btw-github-io.glitch.me"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://srv-file9.gofile.io/download/cpPSDy/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://srv-file9.gofile.io/download/cpPSDy/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://srv-file9.gofile.io/download/cpPSDy/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://srv-file9.gofile.io/download/cpPSDy/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="https://srv-file9.gofile.io/download/cpPSDy/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <header>
+      <a href="">
+        <img
+          src="https://srv-file7.gofile.io/download/3nKW43/YoungChief%20-%20347x113.png"
+          alt="YoungChief Icon"
+          width="width:auto"
+          height="height:auto"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/Contact Me">Contact Me</a>
+          </li>
+          <li>
+            <a href="/A11y">Accesibilty</a>
+          </li>
+          <li>
+            <a href="/i18n">i18n</a>
+          </li>
+          <li>
+            <a href="/QR Code">QR Code</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <noscript>
+      Sorry, I need Javascript to load my site completly
+    </noscript>
+    <input type="url" id="urlinput" />
+    <button onclick="shorturl()">Short The URL</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      var endpoint =
+        "https://www.jsonstore.io/b04f4955e580af995cf9d73b92cd8bfd6f0e91f06ed30274d17c675d3587ac45/ShortLinks/";
+
+      function geturl() {
+        var url = document.getElementById("urlinput").value;
+        var protocol_ok =
+          url.startsWith("http://") ||
+          url.startsWith("https://") ||
+          url.startsWith("ftp://");
+        if (!protocol_ok) {
+          var newurl = "http://" + url;
+          return newurl;
+        } else {
+          return url;
+        }
+      }
+
+      function getrandom() {
+        var text = "";
+        var possible =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for (var i = 0; i < 8; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+      }
+
+      function genhash() {
+        if (window.location.hash == "") {
+          window.location.hash = getrandom();
+        }
+      }
+
+      function send_request(url) {
+        this.url = url;
+        $.ajax({
+          url: endpoint + "/" + window.location.hash.substr(1),
+          type: "POST",
+          data: JSON.stringify(this.url),
+          dataType: "json",
+          contentType: "application/json; charset=utf-8"
+        });
+      }
+
+      function shorturl() {
+        var longurl = geturl();
+        genhash();
+        send_request(longurl);
+      }
+
+      var hashh = window.location.hash.substr(1);
+
+      if (window.location.hash != "") {
+        $.getJSON(endpoint + "/" + hashh, function(data) {
+          data = data["result"];
+
+          if (data != null) {
+            window.location.href = data;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
