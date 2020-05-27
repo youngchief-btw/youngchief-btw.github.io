@@ -33,6 +33,8 @@ minima:
   skin: dark
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+remote_theme: https://github.com/jekyll/minima
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
