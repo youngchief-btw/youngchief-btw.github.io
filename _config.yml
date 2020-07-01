@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: youngchief btw ツ
-email: 33383463+youngchief-btw@users.noreply.github.com
+email: hello@youngchief.tk
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
@@ -22,7 +22,7 @@ email: 33383463+youngchief-btw@users.noreply.github.com
 description: >-
   Hi, My username is youngchief btw ツ. I do programming, gaming, and much more.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://youngchief-btw.now.sh" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://youngchief.tk" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: youngchief-btw
 
@@ -35,7 +35,6 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 remote_theme: https://github.com/jekyll/minima
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
