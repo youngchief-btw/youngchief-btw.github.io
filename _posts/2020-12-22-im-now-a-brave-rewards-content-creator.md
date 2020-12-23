@@ -4,6 +4,8 @@ title: "I'm now a Brave Rewards Content Creator!"
 author: "youngchief btw ツ"
 ---
 
+{% include googleAnalytics.html %}
+
 Have you ever heard of Brave Rewards?
 If you haven't, here's a rundown of Brave & Brave Rewards:
 - Brave is an open-source privacy-focused web browser.
