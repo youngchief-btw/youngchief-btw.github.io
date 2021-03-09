@@ -2,4 +2,4 @@
 
 # [@youngchief-btw](https://github.com/youngchief-btw)
 
-### [Website](https://youngchief-btw.now.sh/) | [Github](https://github.com/youngchief-btw) | [Glitch](https://glitch.com/@youngchief_btw)
+### [Website](https://youngchief.tk/) | [Github](https://github.com/youngchief-btw) | [Glitch](https://glitch.com/@youngchief_btw)
